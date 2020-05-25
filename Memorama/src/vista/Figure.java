@@ -12,10 +12,12 @@ import modelo.*;
 
 public class Figure extends JButton implements ActionListener{
 	
+	//TRIBUTOS
 	private final int xSolPos, ySolPos;
 	private int xPos, yPos;
 	private int dimension;
 	
+	//CONSTRUCTOR
 	public Figure(int xSolPos, int ySolPos, ImageIcon subimage, int dimension){
 		this.xSolPos = xSolPos;
 		this.ySolPos = ySolPos;
@@ -28,7 +30,7 @@ public class Figure extends JButton implements ActionListener{
 		this.setPreferredSize(new Dimension(subimage.getIconWidth(), subimage.getIconHeight()));
 		this.addActionListener(this);
 	}
-
+//METODOS
 	public int getxPos() {
 		return xPos;
 	}
